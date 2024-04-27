@@ -1,0 +1,41 @@
+.content{
+    max-width: 600px;
+    margin: 100px auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    border: 1px solid lightgray;
+}
+
+
+h1, h3, p, li {
+    font-size: 20px;
+    font: "Times New Roman";
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 40px;
+}
+h3{
+    color: #006EB6;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+h1, h3{
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+li{
+    padding: 5px;
+}
+
+.logo{
+    max-width: 150px;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 50px;
+}
