@@ -1,3 +1,28 @@
 h1{
     color: rgb(130, 202, 161);
 }
+
+/* HTML selector */
+/* article{
+    color: red;
+} */
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+/* class selector */
+/* .blue{
+    color: blue;
+} */
+/* element.selector = only that element with that class is effective */
+
+/* id selector ONLY ONE USE ALLOWED */
+/* #unique{
+    color: green;
+} */
