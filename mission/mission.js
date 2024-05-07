@@ -6,12 +6,12 @@ function changeTheme()
     if (mySelect.value == 'dark')
         {
             document.body.classList.add('dark');
-            document.querySelector('.logo').src = 'byui-logo_white.png';
+            document.querySelector('.logo').src = 'images/byui-logo_white.png';
         }
         else
         {
             document.body.classList.remove('dark');
-            document.querySelector('.logo').src = 'byui-logo_blue.webp';
+            document.querySelector('.logo').src = 'images/byui-logo_blue.webp';
         }
 }
     
