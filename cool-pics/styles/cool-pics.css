@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+a{
+    text-decoration: none;
+    color:white;
+}
+header{
+    background-color: #52489C;
+    color:#fff;
+    text-align: center;
+    padding: .5rem;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
