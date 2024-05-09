@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
-
-a{
-    text-decoration: none;
-    color:white;
+body{
+    font-family: 'Mooli', Arial, Helvetica, sans-serif;
+    background-color: lightgray;
 }
 header{
     background-color: #52489C;
@@ -10,9 +9,55 @@ header{
     text-align: center;
     padding: .5rem;
 }
+button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font: 'Mooli';
+}
 ul{
     display: flex;
     justify-content: space-around;
     list-style: none;
     padding: 0;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.gallery{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border: solid 5px #fff;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+footer{
+    background-color: #52489C;
+    height: 50px;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    button{
+        display: none;
+    }
 }
