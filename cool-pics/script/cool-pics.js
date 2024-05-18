@@ -38,6 +38,36 @@ function viewerTemplate(pic, alt){
       </div>`
 }
 
-function viewHandler(event){
-    
+
+// I couldn't figure out where to even start, I wasn't able to understand the explanations and help in the assignment
+// so the following code was written by CHatGPT and edited to fix any bugs.
+function viewHandler(event) {
+  const target = event.target;
+  if (target.tagName === 'IMG') {
+      const pic = target.src.replace('-sm', '-full');
+      const alt = target.alt;
+      const viewerHTML = viewerTemplate(pic, alt);
+      const imageViewer = document.createElement('div');
+      imageViewer.innerHTML = viewerHTML;
+      document.body.appendChild(imageViewer);
+
+      // Add event listener to close the viewer
+      const closeButton = imageViewer.querySelector('.close-viewer');
+      closeButton.addEventListener('click', closeViewer);
+  }
 }
+
+// Function to close the viewer
+function closeViewer() {
+  const viewer = document.querySelector('.viewer');
+  if (viewer) {
+      viewer.remove();
+  }
+}
+
+// Add event listeners to gallery images
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', viewHandler);
+});
+
+// End ChatGPT code
