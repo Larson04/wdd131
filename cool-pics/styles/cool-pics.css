@@ -74,6 +74,9 @@ footer{
     .menu button{
         display: none;
     }
+    ul{
+        flex-direction: row;
+    }
   }
 
 @media screen and (min-width: 1000px) {
