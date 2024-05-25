@@ -1,0 +1,101 @@
+body {
+    font-family: 'Georgia', serif;
+    color: #4a2e2e;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: #4a2e2e;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #a52a2a;
+    font-size: 1.1em;
+}
+
+/* Main content styles */
+main {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Post styles */
+.post {
+    margin-bottom: 40px;
+}
+
+.post img {
+    float: left;
+    margin-right: 20px;
+    width: 120px;
+    height: auto;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    color: #a52a2a;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.post .date, .post .genre, .post .rating {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.post .read-more {
+    font-size: 1em;
+    color: #a52a2a;
+    text-decoration: none;
+}
+
+.post .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #555;
+}
