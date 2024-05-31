@@ -50,27 +50,40 @@ main {
     margin: 20px auto;
     padding: 20px; */
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 75% 25%;
     font-family: sans-serif;
 }
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    /* margin-right: 200px; */
+    margin-left: 50px;
+    width: 90%;
+
+}
+
+
 .post-info{
     grid-column: 1/2;
     text-align: right;
     padding: 25px;
-    /* border-right: solid 1px #68C3D4; */
+    width: 500px;
 }
 .post {
     margin-bottom: 40px;
     grid-column: 2/3;
     padding-left: 25px;
     border-left: solid 1px #68C3D4;
+    width: 100%;
+    margin-right: 500px;
 }
 
 .post img {
     float: center; 
     margin-right: 20px;
-    width: 25%;
-    height: auto;
+    width: 200px;
     margin-left: 25%;
     
 }
@@ -79,11 +92,13 @@ main {
     font-size: 2em;
     color: #007D60;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .post p {
     font-size: 1em;
     line-height: 1.6;
+    
 }
 
 .post-info .date{
@@ -106,7 +121,7 @@ main {
 }
 
 .filters{
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/3;
     height: 100%;
     border: solid 1px #68C3D4;
