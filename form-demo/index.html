@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header><h1>Checkout</h1></header>
+    <main>
+        <section class="errors"></section>
+        <form id="checkoutForm" action="completed.html">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="">Select Payment Option</option>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+            <div class="hide">
+                <label for="creditCardNumber">Credit Card Number:</label>
+                <input
+                    type="text"
+                    id="creditCardNumber"
+                    name="creditCardNumber"
+                    pattern="[0-9]{16}"
+                    placeholder="Enter 16 digits"
+                    required
+                />
+            </div>
+            <div class="hide">
+                <label for="payPalUsername">PayPal Username:</label>
+                <input
+                    type="text"
+                    id="payPalUsername"
+                    name="payPalUsername"
+                    placeholder="Enter PayPal username"
+                    required
+                />
+            </div>
+            <div>
+                <button type="submit">Place Order</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="form-demo.js"></script>
+  </body>
+</html>
