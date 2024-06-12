@@ -6,7 +6,9 @@ h1{
 /* article{
     color: red;
 } */
-
+body{
+    width: 60%;
+}
 ul{
     display: flex;
     flex-direction: row;
