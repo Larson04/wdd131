@@ -1,9 +1,3 @@
-
-// const firstName = "Ruby";
-// const lastName = "Larson";
-// const iNumber = '123-45-6789';
-// const age = 19;
-
 const student1 = {
     firstName: "Jim",
     lastname: "Halpert",
@@ -28,27 +22,16 @@ const student3 = {
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNiF1LhA71uoEIKHARbqvyvOibTJCDwUbDV6QCMbm-RJ07dZ_UgI-qiDj5cuJrB_yYt1A&usqp=CAU",
 };
 
-const students = [student1, student2, student3];
+export const students = [student1, student2, student3];
 
-students.forEach((student) => {
-    const article = document.createElement('article');
-    const firstName = document.createElement('p');
-    firstName.textContent = student.firstName;
-    
-    const lastName = document.createElement('p');
-    lastName.textContent = student.lastName;
-    
-    const iNumber = document.createElement('p');
-    iNumber.textContent = student.iNumber;
-    
-    const age = document.createElement('p');
-    age.textContent = student.age;
-
-    const image = document.createElement('img');
-    image.setAttribute('src', student.image);
-    
-    article.append(firstName, lastName, iNumber, age, image);
-    document.querySelector('section').append(article);
-    
-});
-
+export function addStudent(firstName, lastName, iNumber, age, image) 
+{
+    const newStudent = {
+        firstName,
+        lastName,
+        iNumber,
+        age,
+        image
+    };
+    students.push(newStudent);
+}
