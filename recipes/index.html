@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
+
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="A website for finding recipes">
+    <meta property="og:image" content="URL to an image">
+    <meta property="og:url" content="https://larson04.github.io/wdd131/recipes/index.html">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
     <header>
         <img src="images/recipe-book.png" alt="recipe book">
         <h1>Recipe Book</h1>
         <form>
-            <input type="text" placeholder="Search">
+            <input type="text" placeholder="Find a recipe">
             <button type="submit"><img src="images/search.svg" alt="search icon"></button>
         </form>
     </header>
@@ -19,60 +26,63 @@
         <div class="recipe">
             <div class="search-card">
                 <img src="images/apple-crisp.jpg" alt="apple crisp">
-                <div class="tag">
-                    <p>dessert</p>
-                </div>
-                <h2>Apple Crisp</h2>
-                <p class="rating">4.5 out of 5 stars</p>
-                <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                <span
+                <div class="card-text">
+                    <p class ="tag">dessert</p>            
+                    <h2>Apple Crisp</h2>
+                    <p class="rating">4.5 out of 5 stars</p>
+                    <span
                     class="rating"
                     role="img"
                     aria-label="Rating: 4 out of 5 stars"
-                >
+                    >
                     <span aria-hidden="true" class="icon-star">⭐</span>
                     <span aria-hidden="true" class="icon-star">⭐</span>
                     <span aria-hidden="true" class="icon-star">⭐</span>
                     <span aria-hidden="true" class="icon-star-empty">⭐</span>
                     <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
+                    </span>
+                    <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                </div>
             </div>
+        </div>
+        <div class="recipe-details">
             <p>Author: All Recipes</p>
             <a href="https://www.allrecipes.com/recipe/12409/apple-crisp-ii/">View Recipe</a>
             <p class="cook-time">Cook time: 45 min</p>
-            <p>Yields: 12 servings</p>
-            <p>Date Published: 2023-10-10</p>
-            <h4>Ingredients:</h4>
-            <ul>
-                <li>10 C apples, cored and sliced</li>
-                <li>1 C white sugar</li>
-                <li>1 Tbsp white flour</li>
-                <li>1 tsp ground cinnamon</li>
-                <li>3 Tbsp water</li>
-                <li>1 C rolled oats</li>
-                <li>1 C Flour</li>
-                <li>1 C Brown sugar</li>
-                <li>1/4 tsp baking powder</li>
-                <li>1/4 tsp baking soda</li>
-                <li>1/2 C butter, melted</li>
-            </ul>
-            <h4>Instructions:</h4>
-            <ol>
-                <li>Preheat oven to 350°F (175 degrees C).</li>
-                <li>Place sliced apples in a 9x13-inch baking dish. Mix white sugar, 1 tablespoon flour, and cinnamon together; sprinkle over apples. Pour water evenly over apples.</li>
-                <li>Combine oats, 1 cup flour, brown sugar, baking powder, and baking soda in a large bowl. Add melted butter and mix with a fork until crumbly; sprinkle evenly over apple mixture.</li>
-                <li>Bake in the preheated oven until top is golden brown and apples are bubbling around the edges, about 45 minutes.</li>
-
+                <p>Yields: 12 servings</p>
+                <p>Date Published: 2023-10-10</p>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>10 C apples, cored and sliced</li>
+                    <li>1 C white sugar</li>
+                    <li>1 Tbsp white flour</li>
+                    <li>1 tsp ground cinnamon</li>
+                    <li>3 Tbsp water</li>
+                    <li>1 C rolled oats</li>
+                    <li>1 C Flour</li>
+                    <li>1 C Brown sugar</li>
+                    <li>1/4 tsp baking powder</li>
+                    <li>1/4 tsp baking soda</li>
+                    <li>1/2 C butter, melted</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Preheat oven to 350°F (175 degrees C).</li>
+                    <li>Place sliced apples in a 9x13-inch baking dish. Mix white sugar, 1 tablespoon flour, and cinnamon together; sprinkle over apples. Pour water evenly over apples.</li>
+                    <li>Combine oats, 1 cup flour, brown sugar, baking powder, and baking soda in a large bowl. Add melted butter and mix with a fork until crumbly; sprinkle evenly over apple mixture.</li>
+                    <li>Bake in the preheated oven until top is golden brown and apples are bubbling around the edges, about 45 minutes.</li>
+                </ol>
+            </div>
         </div>
     </main>
     <footer>
-        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
         <div class="social">
             <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
             <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
             <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
             <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
         </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
     </footer>
     <script src="main.js"></script>
     <script src="recipes.mjs"></script>
