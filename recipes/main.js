@@ -83,3 +83,21 @@ function innit() {
 }
 innit();
 
+const searchButton = document.querySelector('button').addEventListener('click',searchHandler());
+function filter(query) {
+    const filtered = recipes.filter(filterFunction)
+    // sort by name
+    const sorted = filtered.sort(sortFunction)
+        return sorted
+
+}
+
+function searchHandler() 
+{
+    e.preventDefault();
+    const searchInput = document.querySelector('#search').value;
+
+    renderRecipes(filter(searchInput));
+    
+    renderRecipes(recipes.filter(recipe => recipe.title.toLowerCase().includes(searchInput.toLowerCase())));
+}
