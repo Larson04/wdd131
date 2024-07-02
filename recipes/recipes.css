@@ -8,7 +8,7 @@ body{
     padding: 10px;
     align-items: center;
     justify-content: center;
-
+    font-family: 'Amatic SC', sans-serif;
 }
 
 header{
@@ -30,7 +30,7 @@ header h1{
     margin: 0;
     padding: 0;
     line-height: 60px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', sans-serif;
 }
 
 header button{
@@ -86,6 +86,7 @@ form input{
 
 .search-card .card-text{
     margin: 10px;
+    font-family: sans-serif;
 }
 
 .search-card .tag{
@@ -95,6 +96,7 @@ form input{
     font-family: sans-serif;
     font-weight: bold;
     width: 60px;
+    
 }
 
 .search-card h2{
