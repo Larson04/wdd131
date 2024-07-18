@@ -1,27 +1,31 @@
-// const menuButton = document.querySelector('.logo button');
-// // menuButton.classList.add('hide')
-// menuButton.addEventListener("click", toggleMenu);
+document.querySelector('#year')//.textContent = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
+year.textContent = currentYear;
 
-// function toggleMenu() {
-//     const menu = document.querySelector("#menu");
-//     // menu.classList.remove(".hide");
+const menuButton = document.querySelector('.menu button');
+// menuButton.classList.add('hide')
+menuButton.addEventListener("click", toggleMenu);
 
-//     if (menu.classList.contains("hide")) {
-//       menu.classList.remove("hide");
-//     } else {
-//       menu.classList.add("hide");
-//     }
-//   }
+function toggleMenu() {
+    const menu = document.querySelector("#menu");
+    // menu.classList.remove(".hide");
 
-// function handleResize(){
-//     const menu = document.querySelector("#menu");
-//     if (window.innerWidth > 1000) {
-//         menu.classList.remove("hide");
-//     } else {
-//         menu.classList.add("hide");
-//     }
+    if (menu.classList.contains("hide")) {
+      menu.classList.remove("hide");
+    } else {
+      menu.classList.add("hide");
+    }
+  }
+
+function handleResize(){
+    const menu = document.querySelector("#menu");
+    if (window.innerWidth > 1000) {
+        menu.classList.remove("hide");
+    } else {
+        menu.classList.add("hide");
+    }
   
-// }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     let participantCount = 1;

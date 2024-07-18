@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yatra+One&display=swap');
 
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 22px;
+  width:400px;
+  background-color: #EFF2F2;
+} 
+
+h1, h2{
+  font-family: 'Yatra One', cursive;
+  line-height: 1.2em;
+}
+
 header{
   background-color: #673BAA;
   color:#EFF2F2;
   text-align: center;
   padding: .5rem;
+}
+
+header h1{
+  font-size: 3rem;
 }
 
 button{
@@ -47,20 +65,9 @@ a{
 }
 
 
-/* /* * {
+ /* * {
     box-sizing: border-box;
   } */
-  body {
-    font-family: Lato, Helvetica, sans-serif;
-    font-size: 16px;
-    color: #333;
-    line-height: 22px;
-    width:100%;
-  } 
-  h1, h2{
-    font-family: 'Yatra One', cursive;
-    line-height: 1.2em;
-  }
 
  div,
   form,
@@ -72,14 +79,15 @@ a{
     padding: 0;
     margin: 0;
     outline: none;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 50px;
   } 
  
   .testbox {
     padding: 20px;
-    max-width: 400px;
+    max-width: 90%;
     margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   
@@ -279,11 +287,11 @@ a{
   button:hover {
     background: #088DC9;
   }
-  @media (max-width: 400px) {
+  /* @media (max-width: 400px) {
     .columns div {
       width: 100%;
     }
-  }
+  } */
   
 
   footer{
