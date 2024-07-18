@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yatra+One&display=swap');
 
+body{
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #EFF2F2;
+}
 h1, h2{
   font-family: 'Yatra One', cursive;
+  line-height: 1.2em;
 }
 h3, p{
   font-family: Lato, Helvetica, sans-serif;
@@ -65,6 +71,11 @@ a{
   /* Hide the images by default */
   .mySlides {
     display: none;
+    height: 300px;
+  }
+
+  .mySlides img{
+    height: 250px;
   }
   
   
@@ -131,16 +142,15 @@ footer img{
   
 }
 
+/* REGISTRATION PAGE */
+/* 
 
-
-* {
-  box-sizing: border-box;
-}
 body {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Lato, Helvetica, sans-serif;
   font-size: 16px;
   color: #333;
   line-height: 22px;
+  width: 100%;
 }
 
 div,
@@ -228,6 +238,7 @@ input:hover::placeholder {
 }
 
 /* Style checkbox and radio. To do this we have to hide the defaults then we create our own */
+/*
 input[type="radio"] {
   display: none;
 }
@@ -273,7 +284,7 @@ input[type="radio"]:checked + label:after {
   opacity: 1;
 }
 /* end style checkbox and radio */
-
+/*
 .participant {
   background: #EFF2F2;
   padding: 10px;
@@ -357,4 +368,4 @@ button:hover {
   .columns div {
     width: 100%;
   }
-}
+} */
