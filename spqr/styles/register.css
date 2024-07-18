@@ -1,3 +1,50 @@
+header{
+  background-color: #673BAA;
+  color:#EFF2F2;
+  text-align: center;
+  padding: .5rem;
+}
+
+button{
+  border: none;
+  color: #EFF2F2;
+  font-size: 1.5rem;
+  font: 'Mooli';
+  background-color: transparent;
+}
+
+header img {
+  width: 40px;
+  border-radius: 10%;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  padding: .5rem;
+}
+
+li:hover{
+  text-decoration: underline;
+  background-color: #088DC9;
+}
+
+.hide{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color:#EFF2F2;
+}
+
+
 * {
     box-sizing: border-box;
   }

@@ -8,18 +8,18 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/register.css" />
+    <!-- <link rel="stylesheet" href="styles/register.css" /> -->
+     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
         <h1>Welcome to Camp Jupiter</h1>
-        <button><img src="images/spqr-logo.png" alt="SPQR logo"></button>
-        <!-- image from https://www.muraldecal.com/en/stickers/product/italy-676/spqr-roma-29909 -->
-        <nav>
-            <ul>
+        <nav class="menu">
+            <button class="logo"><img src="images/spqr-logo.png" alt="SPQR logo"></button>
+            <!-- image from https://www.muraldecal.com/en/stickers/product/italy-676/spqr-roma-29909 -->
+            <ul id="menu" class="hide">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="registration.html">Registration</a></li>
-                <li><a href="#">Page3</a></li>
             </ul>
         </nav>
     </header>
@@ -171,6 +171,7 @@
         <img src="images/instagram-logo.png" alt="Instagram logo">
         <img src="images/twitter-logo.png" alt="Twitter logo">
     </footer>
+    <script src="scripts/spqr.js"></script>
     <script src="scripts/register.js"></script>
   </body>
 </html>
