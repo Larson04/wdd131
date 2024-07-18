@@ -304,7 +304,7 @@ a{
   }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1500px) {
   ul{
     flex-direction: row;
   }
