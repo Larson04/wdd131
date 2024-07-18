@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   color: #333;
   line-height: 22px;
-  width:400px;
+  width:100%;
   background-color: #EFF2F2;
 } 
 
@@ -18,23 +18,23 @@ header{
   background-color: #673BAA;
   color:#EFF2F2;
   text-align: center;
-  padding: .5rem;
+  padding: 1.5rem;
 }
 
 header h1{
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 button{
   border: none;
   color: #EFF2F2;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font: 'Mooli';
   background-color: transparent;
 }
 
 header img {
-  width: 40px;
+  width: 120px;
   border-radius: 10%;
 }
 
@@ -47,7 +47,8 @@ ul{
 }
 
 li{
-  padding: .5rem;
+  padding: 1.5rem;
+  font-size: 40px;
 }
 
 li:hover{
@@ -62,6 +63,7 @@ li:hover{
 a{
   text-decoration: none;
   color:#EFF2F2;
+  font-family: Lato, Helvetica, sans-serif;
 }
 
 
@@ -287,11 +289,7 @@ a{
   button:hover {
     background: #088DC9;
   }
-  /* @media (max-width: 400px) {
-    .columns div {
-      width: 100%;
-    }
-  } */
+  
   
 
   footer{
@@ -304,3 +302,80 @@ a{
     width: 40px;
     
   }
+
+
+@media screen and (min-width: 700px) {
+  ul{
+    flex-direction: row;
+  }
+  .hide {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  
+  body {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+  
+  header{
+    padding: .5rem;
+  }
+
+  header h1{
+    font-size: 40px;
+  }
+  
+  header img {
+    width: 80px;
+  }
+  ul{
+    flex-direction: row;
+
+  }
+  
+  li{
+    padding: .5rem;
+    font-size: 20px;
+  }
+  
+  li:hover{
+    text-decoration: underline;
+    background-color: #088DC9;
+    border-radius: 15%;
+  }
+  
+  .hide {
+    display: flex;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  div,
+  form,
+  input,
+  select,
+  textarea,
+  label,
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .testbox {
+    max-width: 960px;
+  }
+  
+  @media (max-width: 568px) {
+    .columns div {
+      width: 100%;
+    }
+  }
+  
+  
+}

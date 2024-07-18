@@ -9,7 +9,7 @@ h1, h2{
   font-family: 'Yatra One', cursive;
   line-height: 1.2em;
 }
-h3, p{
+h3, p, a{
   font-family: Lato, Helvetica, sans-serif;
 }
 
@@ -79,12 +79,6 @@ a{
   }
   
   
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  } */
-  
   
   /* Number text (1/3 etc) */
 .numbertext {
@@ -140,4 +134,58 @@ footer{
 footer img{
   width: 40px;
   
+}
+
+
+@media screen and (min-width: 700px) {
+  body{
+    max-width:100%;
+  }
+
+  header img{
+    width: 80px;
+  }
+  ul{
+    flex-direction: row;
+  }
+  .hide {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body{
+    max-width:100%;
+  }
+
+  header img{
+    width: 80px;
+  }
+  ul{
+    flex-direction: row;
+    font-size: 25px;
+  }
+  .hide {
+    display: flex;
+  }
+  
+  p{
+    width: 70%;
+  }
+  .disclaimer{
+    text-align: center;
+  }
+
+  .preators{
+    width:70%;
+    justify-content: space-around
+  }
+
+  .reyna, .frank{
+    width: 20%;
+  }
+
+  footer p{
+    width: 100%;
+  }
 }
