@@ -304,7 +304,7 @@ a{
   }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   ul{
     flex-direction: row;
   }
@@ -313,7 +313,7 @@ a{
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 2000px) {
   
   body {
     font-size: 16px;
