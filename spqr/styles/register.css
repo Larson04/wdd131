@@ -22,7 +22,7 @@ header{
 }
 
 header h1{
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 button{
@@ -113,7 +113,7 @@ a{
     background-color:#EFF2F2 ;
   }
   input {
-    width: 100%;
+    width: 95%;
     padding: 5px;
   }
   input[type="checkbox"] {
