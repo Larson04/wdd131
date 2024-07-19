@@ -1,4 +1,4 @@
-document.querySelector('#year')//.textContent = new Date().getFullYear();
+const year =document.querySelector('#year')//.textContent = new Date().getFullYear();
 const currentYear = new Date().getFullYear();
 year.textContent = currentYear;
 
