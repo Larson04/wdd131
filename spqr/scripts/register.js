@@ -2,30 +2,30 @@
 // const currentYear = new Date().getFullYear();
 // year.textContent = currentYear;
 
-const menuButton = document.querySelector('.menu button');
-// menuButton.classList.add('hide')
-menuButton.addEventListener("click", toggleMenu);
+// const menuButton = document.querySelector('.menu button');
+// // menuButton.classList.add('hide')
+// menuButton.addEventListener("click", toggleMenu);
 
-function toggleMenu() {
-    const menu = document.querySelector("#menu");
-    // menu.classList.remove(".hide");
+// function toggleMenu() {
+//     const menu = document.querySelector("#menu");
+//     // menu.classList.remove(".hide");
 
-    if (menu.classList.contains("hide")) {
-      menu.classList.remove("hide");
-    } else {
-      menu.classList.add("hide");
-    }
-  }
+//     if (menu.classList.contains("hide")) {
+//       menu.classList.remove("hide");
+//     } else {
+//       menu.classList.add("hide");
+//     }
+//   }
 
-function handleResize(){
-    const menu = document.querySelector("#menu");
-    if (window.innerWidth > 1000) {
-        menu.classList.remove("hide");
-    } else {
-        menu.classList.add("hide");
-    }
+// function handleResize(){
+//     const menu = document.querySelector("#menu");
+//     if (window.innerWidth > 1000) {
+//         menu.classList.remove("hide");
+//     } else {
+//         menu.classList.add("hide");
+//     }
   
-}
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
     let participantCount = 1;
